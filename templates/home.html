@@ -21,7 +21,6 @@
       
      #body {
        text-align:center;
-       margin: 0 autopx 0 autopx;
        
      }
     #container {
@@ -58,6 +57,7 @@
       background-color: lightcoral;
       border: transparent;
       cursor: pointer; 
+      widht: 50px;
     }
     .fecha {
       display: flex;
@@ -77,16 +77,23 @@
     }
     #description {rgb(120, 120, 120)b(80,80,80);
     }
+    .container {
+      background-color: white; 
+      color: white;
+      text-align:center;
+      min-width: 1365px;
+    }
     </style>
   </head>
   <body>
-    <div id = body>
-      <h1 id = title class= "mt-4"> Tasks:</h1>
-        <div id = container>
-          <h2 id = user>User</h2>
-          <button id = mode type="button" class="btn btn-outline-danger">Mode</button>
+    {% include 'nav.html'%}
+    <div id = 'body' >
+      <h1 id = 'title' class= "mt-4"> Tasks:</h1>
+        <div class = 'row'>
+          <h2 id = 'user' class = 'col-6'>User</h2>
+          <button type="button" class="btn btn-outline-danger w-25 p-3 h-50 d-inline-block col-6 " >Mode</button>
         </div>
-      <div class = task-list>
+      <div class = 'task-list'>
           {% for task in tasks %}
            {% include 'tasks.html' %}
           {% endfor %}    
@@ -98,6 +105,10 @@
               </p>
            {% endif %}
           {% endfor %}
-      </div>
+      
+    </div>
+    <div class = footer>
+    {% include 'footer.html'%}
+    </div>
   </body>
 </html>
