@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tasks List</title>
+    <style>
+      #title {
+        font-size: 65px;
+        margin: 0 0 0 0;
+      }
+      
+     #body {
+       text-align:center;
+       margin: 0 autopx 0 autopx;
+       
+     }
+    #container {
+      display: flex;
+      align-items: center; /* Centra verticalmente */
+      justify-content: space-between;
+      margin: 0 200px 0 200px;
+    }
+    .post-it {
+      display: flex;
+      padding: 10px;
+      background-color: yellow;
+      border: transparent;
+      box-shadow: 3px 3px 3px grey;
+      cursor: pointer;
+      margin: 0 auto;
+      max-width: 350px;
+      max-height: 250px; 
+      width: relative;
+      text-align: auto;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .post-it p {
+      font-family: Comic Sans MS;
+      word-wrap: break-word;
+      
+    }
+    .post-it h2, .post-it h3 {
+      margin: 0;
+    }
+    .post-it h3 {
+      margin-top: 10px;
+      text-align: right;
+    }
+    .inner-button {
+      background-color: rgba(82, 143, 229, 1);
+      border: transparent;
+      font-family: Roboto;
+      width: 75px;
+      color: rgb(255, 255, 255);
+      align: right;
+      cursor: pointer;
+      }
+    #mode {
+      background-color: lightcoral;
+      border: transparent;
+      cursor: pointer; 
+    }
+    .fecha {
+      display: flex;
+      align-items: center; /* Centra verticalmente */
+      justify-content: space-between;
+      gap: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id = body>
+      <h1 id = title> Tasks:</h1>
+        <div id = container>
+          <h2 id = user>User</h2>
+          <button id = mode>Mode</button>
+        </div>
+            <div class = "post-it">
+              <div class = "fecha">
+                <h2> Tarea 1 </h2>
+                <h3>n/n/2023</h3>
+              </div>
+              <p>La propiedad display: inline-block hace que el botón se muestre en línea con otros elementos y permita aplicar estilos de ancho y altura. 
+              </p>
+              <button class= "inner-button">Done</button>
+              </div> 
+      </div>
+  </body>
+</html>
