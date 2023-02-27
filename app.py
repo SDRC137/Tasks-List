@@ -21,6 +21,12 @@ tasks = [
     'Description': 'questions 1,2,3',
     'fecha': '1/03/2023'
   },
+  {
+    'id': 3,
+    'title': 'Tecno',
+    'Description': 'questions 1,2,3',
+    'fecha': '1/03/2023'
+  },
 ]
 
 

@@ -10,7 +10,7 @@
     <title> Tasks List</title>
     <style>
       body {
-        background-image:   url('https://www.linkpicture.com/q/29364.jpg');
+        background-image:   url('https://www.linkpicture.com/q/20532076_1.jpg');
         background-size: cover;
       }
       #title {
@@ -27,7 +27,7 @@
       display: flex;
       align-items: center; /* Centra verticalmente */
       justify-content: space-between;
-      margin: 0 200px 0 200px;
+      margin: 0 100px 0 100px;
     }
     #post-it {
       margin: 10px auto;
@@ -77,22 +77,14 @@
     }
     #description {rgb(120, 120, 120)b(80,80,80);
     }
-    .container {
-      background-color: white; 
-      color: white;
-      text-align:center;
-      min-width: 1365px;
-    }
+    
     </style>
   </head>
   <body>
     {% include 'nav.html'%}
     <div id = 'body' >
       <h1 id = 'title' class= "mt-4"> Tasks:</h1>
-        <div class = 'row'>
-          <h2 id = 'user' class = 'col-6'>User</h2>
-          <button type="button" class="btn btn-outline-danger w-25 p-3 h-50 d-inline-block col-6 " >Mode</button>
-        </div>
+          <button id = 'mode'type="button" class="btn btn-outline-dangerh-50 d-inline-block c" >Mode</button>
       <div class = 'task-list'>
           {% for task in tasks %}
            {% include 'tasks.html' %}
@@ -107,8 +99,8 @@
           {% endfor %}
       
     </div>
-    <div class = footer>
+    
     {% include 'footer.html'%}
-    </div>
+
   </body>
 </html>
