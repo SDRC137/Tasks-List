@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="prueba.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -17,6 +18,7 @@
         font-size: 65px;
         margin: 0 0 0 0;
         font-family: 'Exo 2', sans-serif;
+        color: white;
       }
       
      #body {
@@ -31,6 +33,7 @@
     }
     #post-it {
       margin: 10px auto;
+      margin-left: 20px;
       width: 300px;
     }
     .post-it p {
@@ -84,8 +87,8 @@
     {% include 'nav.html'%}
     <div id = 'body' >
       <h1 id = 'title' class= "mt-4"> Tasks:</h1>
-          <button id = 'mode'type="button" class="btn btn-outline-dangerh-50 d-inline-block c" >Mode</button>
-      <div class = 'task-list'>
+          <button id = "mode" type="button" class="btn btn-outline-dangerh-50 d-inline-block c" >Mode</button>
+      <div class = 'task-list mx-auto'>
           {% for task in tasks %}
            {% include 'tasks.html' %}
           {% endfor %}    
