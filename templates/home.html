@@ -89,9 +89,10 @@
   <body id = "my">
     {% include 'nav.html'%}
     <div id = 'body' >
-      <h1 id = 'title' class= "mt-4"> Tasks:</h1>
+      <h1 id = 'title' class= "mt-1 mb-3"> Tasks:</h1>
           <button id = "mode" type="button" class="btn btn-outline-dangerh-50 d-inline-block c" >View</button>
-      <div class = 'task-list ms-5'>
+          <button type="button" class="btn btn-info ms-5">+</button>
+      <div class = 'task-list ms-5 '>
           {% for task in tasks %}
            {% include 'tasks.html' %}
           {% endfor %}    
