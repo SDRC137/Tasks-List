@@ -2,6 +2,7 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
+tasks_type = ["red, orange, yellow, green, blue, purple"]
 tasks = [
   {
     'id': 1,

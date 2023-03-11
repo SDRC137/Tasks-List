@@ -11,9 +11,12 @@
     <title> Tasks List</title>
     <style>
       body {
-        background-image:   url('https://www.linkpicture.com/q/20532076_1.jpg');
+        background-image:url('https://www.linkpicture.com/q/20532076_1.jpg');
+        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
       }
+    
       #title {
         font-size: 65px;
         margin: 0 0 0 0;
@@ -83,12 +86,12 @@
     
     </style>
   </head>
-  <body>
+  <body id = "my">
     {% include 'nav.html'%}
     <div id = 'body' >
       <h1 id = 'title' class= "mt-4"> Tasks:</h1>
-          <button id = "mode" type="button" class="btn btn-outline-dangerh-50 d-inline-block c" >Mode</button>
-      <div class = 'task-list mx-auto'>
+          <button id = "mode" type="button" class="btn btn-outline-dangerh-50 d-inline-block c" >View</button>
+      <div class = 'task-list ms-5'>
           {% for task in tasks %}
            {% include 'tasks.html' %}
           {% endfor %}    
